@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <Button
+	    android:id="@+id/button_add"
+	    android:layout_gravity="top"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Add wine" />
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_gravity="top"
+        android:layout_toRightOf="@id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit name" />
+	<Button
+        android:id="@+id/button_delete"
+        android:layout_gravity="top"
+        android:layout_toRightOf="@id/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete List" />
+	
+	<Button
+        android:id="@+id/button_share"
+        android:layout_gravity="top"
+        android:layout_toRightOf="@id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Share  " />
+	
+    <ListView
+        android:id="@+id/list_view2"
+        android:layout_below="@id/button_add"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        
+        />
+</RelativeLayout>

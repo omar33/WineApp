@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textColorLink="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/txtDelName"
+            android:layout_width="200px"
+            android:layout_height="60px"
+            android:background="@drawable/round" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Price ($): " />
+
+        <EditText
+            android:id="@+id/txtDelPrice"
+            android:layout_width="200px"
+            android:layout_height="60px"
+            android:digits="0123456789."
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Quantity: " />
+
+        <EditText
+            android:id="@+id/txtDelQuantity"
+            android:layout_width="200px"
+            android:layout_height="60px"
+            android:digits="0123456789"
+            android:inputType="numberDecimal"
+            android:singleLine="true" />
+    </TableRow>
+
+    <TableRow>
+
+        <Spinner
+            android:id="@+id/spinDiagType"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_span="1"
+            android:entries="@array/wineType_arrays" />
+    </TableRow>
+
+    <TableRow>
+    </TableRow>
+
+</TableLayout>

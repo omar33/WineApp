@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#8F2831">
+ 
+    
+    
+      <EditText 
+         android:id="@+id/forgot_username"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dip"
+         android:singleLine="true"
+         android:layout_marginBottom="20dip"
+         android:background="@drawable/round"
+         android:hint="Username"/>
+    
+    <TextView 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:textColor="#372c24"
+         android:text="Select A Security Question"/>
+    
+    
+    
+    <Spinner
+        		android:id="@+id/forgot_spinner"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:entries="@array/secretquestion_arrays"
+        		android:layout_marginBottom="20dip"
+        		android:background = "@drawable/round"/>
+ 
+   
+
+  <EditText 
+         android:id="@+id/forgot_security_answer"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dip"
+         android:singleLine="true"
+         android:layout_marginBottom="20dip"
+         android:background="@drawable/round"
+         android:hint="Security Question Answer"/>
+ 
+    <Button
+        android:id="@+id/retrieve_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Retrieve Password" />
+ 
+</LinearLayout>

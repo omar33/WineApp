@@ -1,0 +1,39 @@
+<sql>
+<statement>
+CREATE TABLE IF NOT EXISTS employee (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT, 
+	wineName VARCHAR(50), 
+	wineTitle VARCHAR(50), 
+	location VARCHAR(50), 
+	description  VARCHAR(1000),
+	foodParing  VARCHAR(1000), 
+	year VARCHAR(10), 
+	price VARCHAR(10), 
+	picture VARCHAR(200))
+</statement>
+
+<statement>INSERT INTO employee VALUES(1,'Shafer Relentless','-Red Wine','Napa Valley, USA' ,'Wine Spectator Wine of the Year 2012. Indicative blend: Predominantly Syrah with Petite Sirah.' ,'Fried blood sausage with rice(morcilla), Rogan josh, Chilean beef and sweetcorn casserole(pastel de choclo), Spiced venison skewers, Mushroom roulade','2008','$175.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(2,'Chateau de Saint Cosme Gigondas','-Red Wine','Rhone, France','Description' ,'Steak with bone marrow, Beef and bean stew with sage, Meatloaf, Argentinian Parrilla-grilled, Grass-fed steak, Kalua pig, Herb-crusted lamb rack, Lebanese stuffed eggplant.','2010','$48.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(3,'DonnaChiara Aglianico Irpinia','-Red Wine','Campania, Italy' ,'Description','Beef braised in milk(manzo al latte), Mallorcan braised rabbit(conejo a la Mallorquina), Chicken in aji(pepper) sauce (aji de gallina), paprika-spiced beef stripes, Barbecued lamb chops with minted peas, Mushroom risotto, Baked meatballs','2008','$17.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(4,'Nobilo Icon Pinot Noir, Marlborough','-Red Wine','Marlborough, New Zealand' ,'Description','Beef Bourguignon, Stewed rabbit and hare ( civet de lapin et lievre), pappardelle pasta with a rabbit and porcini mushroom ragu, Peking duck, Ahi tuna, Grilled salmon with roasted fennel, crumbed beef Milanesa, Dark Chocolate truffles, Harissa-marinated pork ribs, Seared kangaroo, Fried Chicken livers (sawada dajaj).','2010','$19.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(5,'Veramonte Primus The Blend','-Red Wine','Colchagua Valley, Chile' ,'Description','Boeuf Quercynois (Quercy beef and bean casserole), Massaman beef curry (Thai beef with potato and peanuts), New York strip steaks with warm mushroom salad, Sausage rools with tomato sauce (ketchup) ','2009','$19.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(6,'Chateau Guiraud','- White Wine','Sauternes, France','Description' ,'Roasted squab (pigeon) with quince puree, Caramel pastries(canneles Bordelais), Thin-sliced octopus drizzled with sudachi, Crepes and caramel cream(Panqueques celestino), Whiting and king prawns str-fried in lemongrass and ginger, candied orange cheesecake','2009','$78.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(7,'Quinta do Vallado Touriga Nacional','- Red Wine','Douro, Portugal ' ,'Description','Roasted kid(Cabrito assado no forno), Chocolate ans custard tart(fortified), Grass-fed wagyu rib-eye fillet with tempura vegetables, Black sticky-rice dessert(bee koh moy), Argentinian parrilla-grilled, grass-fed steak, Caramel pudding(leche asada), Venison chops and beetroot risotto, Almond friands','2009','$53.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(8,'Celler Can Blau','- Red Wine','Montsant, Spain ' ,'Description','Rustic soup of pork vegetables and bean(Ollada), Spicy beef heart skewers(Anticuchos), Milk-fed beal with baba ghanoush','2009','$16.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(9,'Two Hands Wines Bella Garden','- Red Wine','Barossa Valley, Australia ','Description' ,'Beef Wellington, Grilled veal chops sage (Costolette di vitello alla griglia), Chicken heart or gizzard yakitori, Malay lamb korma, Lentil soup with smoked ham hock, Peruvian stuffed pepper (Rocoto relleno), Spiced venison skewers, Mushroom and eggplant filo','2010','$71.00','howard.jpg')</statement>
+
+
+<statement>INSERT INTO employee VALUES(10,'Shafer Relentless','-Ice Wine','Napa Valley, USA' ,'Description' ,'Fried blood sausage with rice(morcilla), Rogan josh, Chilean beef and sweetcorn casserole(pastel de choclo), Spiced venison skewers, Mushroom roulade','2008','$175.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(11,'Chateau de Saint Cosme Gigondas','-Ice Wine','Rhone, France','Description' ,'Steak with bone marrow, Beef and bean stew with sage, Meatloaf, Argentinian Parrilla-grilled, Grass-fed steak, Kalua pig, Herb-crusted lamb rack, Lebanese stuffed eggplant.','2010','$48.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(12,'DonnaChiara Aglianico Irpinia','-Ice Wine','Campania, Italy' ,'Description','Beef braised in milk(manzo al latte), Mallorcan braised rabbit(conejo a la Mallorquina), Chicken in aji(pepper) sauce (aji de gallina), paprika-spiced beef stripes, Barbecued lamb chops with minted peas, Mushroom risotto, Baked meatballs','2008','$17.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(13,'Nobilo Icon Pinot Noir, Marlborough','-Ice Wine','Marlborough, New Zealand' ,'Description','Beef Bourguignon, Stewed rabbit and hare ( civet de lapin et lievre), pappardelle pasta with a rabbit and porcini mushroom ragu, Peking duck, Ahi tuna, Grilled salmon with roasted fennel, crumbed beef Milanesa, Dark Chocolate truffles, Harissa-marinated pork ribs, Seared kangaroo, Fried Chicken livers (sawada dajaj).','2010','$19.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(14,'Sweet White Wine','-Dessert Wine','Colchagua Valley, Chile' ,'Description','Boeuf Quercynois (Quercy beef and bean casserole), Massaman beef curry (Thai beef with potato and peanuts), New York strip steaks with warm mushroom salad, Sausage rools with tomato sauce (ketchup) ','2009','$19.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(15,'Chateau Guiraud','- De Wine','Dessert, France','Description' ,'Roasted squab (pigeon) with quince puree, Caramel pastries(canneles Bordelais), Thin-sliced octopus drizzled with sudachi, Crepes and caramel cream(Panqueques celestino), Whiting and king prawns str-fried in lemongrass and ginger, candied orange cheesecake','2009','$78.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(16,'Quinta do Vallado Touriga Nacional','- Dessert Wine','Douro, Portugal ' ,'Description','Roasted kid(Cabrito assado no forno), Chocolate ans custard tart(fortified), Grass-fed wagyu rib-eye fillet with tempura vegetables, Black sticky-rice dessert(bee koh moy), Argentinian parrilla-grilled, grass-fed steak, Caramel pudding(leche asada), Venison chops and beetroot risotto, Almond friands','2009','$53.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(17,'Celler Can Blau','- Ice Wine','Montsant, Spain ' ,'Description','Rustic soup of pork vegetables and bean(Ollada), Spicy beef heart skewers(Anticuchos), Milk-fed beal with baba ghanoush','2009','$16.00','howard.jpg')</statement>
+<statement>INSERT INTO employee VALUES(18,'Two Hands Wines Bella Garden','- Dessert Wine','Barossa Valley, Australia ','Description' ,'Beef Wellington, Grilled veal chops sage (Costolette di vitello alla griglia), Chicken heart or gizzard yakitori, Malay lamb korma, Lentil soup with smoked ham hock, Peruvian stuffed pepper (Rocoto relleno), Spiced venison skewers, Mushroom and eggplant filo','2010','$71.00','howard.jpg')</statement>
+
+
+
+
+</sql>

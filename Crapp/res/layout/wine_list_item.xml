@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="75px"
+    android:padding="8px"
+    android:background="@drawable/woood"> 
+  
+
+	<TextView
+		android:id="@+id/wineName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#FFFFFF"/>
+	    
+	<TextView
+		android:id="@+id/wineTitle"
+		android:layout_marginLeft="6px"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/wineName"
+	    android:textColor="#FFFFFF"
+	    />
+
+	<TextView
+		android:id="@+id/location"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/wineName"
+	    android:textColor="#FFFFFF"/>
+
+	<TextView
+		android:id="@+id/foodParing"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/wineName"
+	    
+	   
+	    />
+</RelativeLayout>

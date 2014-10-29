@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="6" >
+
+        <Button
+            android:id="@+id/button_sparkling"
+            android:layout_width="236dp"
+            android:layout_height="70dp"
+            android:layout_column="1"
+            android:layout_columnSpan="3"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:text="Sparkling Wine" />
+
+        <Button
+            android:id="@+id/button_table"
+            android:layout_width="117dp"
+            android:layout_height="70dp"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_row="2"
+            android:text="Table Wine" />
+
+        <Button
+            android:id="@+id/button_dry"
+            android:layout_width="117dp"
+            android:layout_height="70dp"
+            android:layout_column="2"
+            android:layout_columnSpan="2"
+            android:layout_gravity="bottom|right"
+            android:layout_row="2"
+            android:text="Dry Wine" />
+
+        <Button
+            android:id="@+id/button_cabernet"
+            android:layout_width="117dp"
+            android:layout_height="70dp"
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_gravity="bottom"
+            android:layout_row="3"
+            android:text="Cabernet" />
+
+        <Button
+            android:id="@+id/button_barley"
+            android:layout_width="117dp"
+            android:layout_height="70dp"
+            android:layout_column="2"
+            android:layout_columnSpan="2"
+            android:layout_gravity="bottom|right"
+            android:layout_row="3"
+            android:text="Barley Wine" />
+
+        <TableLayout
+            android:layout_width="236dp"
+            android:layout_height="168dp"
+            android:layout_column="1"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="4"
+            android:columnCount="2" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sparkling"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/total_sparkling"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:text="Table Wine"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/total_table"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dry Wine"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/total_dry"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cabernet"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/total_cabernet"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:text="Barley Wine"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/total_barley"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_column="3"
+            android:layout_gravity="bottom|right"
+            android:layout_row="5"
+            android:text="Clear" />
+
+        <Space
+            android:layout_width="52dp"
+            android:layout_height="1dp"
+            android:layout_column="0"
+            android:layout_row="0" />
+    </GridLayout>
+
+</LinearLayout>

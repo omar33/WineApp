@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.crapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <permission
+        android:name="com.crapp.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+	<uses-permission android:name="com.crapp.permission.MAPS_RECEIVE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" /> 
+    
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+         >
+        <activity
+            android:name="com.crapp.Login"
+            android:launchMode="singleTask"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.crapp.Registration"
+            android:parentActivityName="com.crapp.Login"
+            android:label="@string/title_activity_registration" >
+        </activity>
+            
+        <activity android:name="com.crapp.WineList"></activity>
+        <activity android:name="com.crapp.HomePage"></activity>
+        <activity
+            android:name="com.crapp.PlacesActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:parentActivityName="com.crapp.HomePage"
+            android:configChanges="keyboardHidden|orientation|screenSize" >
+        </activity>
+        <activity
+            android:name=".SinglePlaceActivity"
+            android:label="Details"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".PlacesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+		</activity>
+        <activity
+            android:name=".PlacesMapActivity"
+            android:label="Map View"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".PlacesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+		</activity>
+        
+        <activity android:name="EmployeeDetails"></activity>
+    	<activity android:name="DirectReports"></activity>
+    	
+    	 <activity android:name="com.crapp.WineBuddy"></activity>
+        <activity android:name="com.crapp.Bac"></activity>
+        <activity android:name="com.crapp.TabTracker"></activity>
+        <activity android:name="com.crapp.WineTab"></activity>
+       
+        <!-- Inventory Activity -->
+        <activity android:name="com.crapp.Inventory_AddWine" android:label="Add Wine"></activity>
+   	    <activity android:name="GridList" android:label="Wines"></activity>
+   	    <activity android:name="com.crapp.Inventory"></activity>
+   	    
+   	    
+   	    <activity android:name="com.crapp.AddWishItemActivity"></activity>
+   	    <activity android:name="com.crapp.AddWishListActivity"></activity>
+   	    <activity android:name="com.crapp.WishItemListActivity"></activity>
+   	    <activity android:name="com.crapp.WishListManagerActivity"></activity>
+   	    <activity android:name="com.crapp.test"></activity>
+   	    
+   	    <activity android:name="com.crapp.friendList"></activity>
+   	    <activity android:name="com.crapp.friendWishList"></activity>
+   	    <activity android:name="com.crapp.FriendWishItem"></activity>
+   	    
+   	    <activity android:name="com.crapp.model.FBConnect"
+                  android:label="@string/app_name">
+        </activity>
+
+		<activity android:name="com.crapp.model.FBPost"
+                  android:label="@string/app_name">
+             <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>        
+			</intent-filter>
+        </activity>
+   	    
+   	    <meta-data
+    		android:name="com.google.android.maps.v2.API_KEY"
+    		android:value="AIzaSyB6OzmyujJ_hb2RwHLJlrNeV9DIXORzSg4"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dip" 
+    android:paddingBottom="10dip"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip">
+    
+    <!--  Name Value -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+    
+    <!-- Address Label -->
+    <TextView
+        android:id="@+id/addressLabel"
+        android:text="@string/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dip"
+        android:textStyle="bold"
+        android:layout_below="@id/name"/>
+    
+    <!--  Address Value -->
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressLabel"/>
+    
+    <!-- Phone Label -->
+    <TextView
+        android:id="@+id/phoneLabel"
+        android:text="@string/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:textStyle="bold"
+        android:layout_below="@id/address"/>
+    
+    <!-- Phone Number -->
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_below="@id/address"
+        android:clickable="true"
+        android:layout_toRightOf="@id/phoneLabel"/>
+    
+    <!-- Rating Value -->
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_below="@id/phoneLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/price"/>
+    
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/address"/>
+    
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/distance"/>
+    
+    <RelativeLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical" 
+    	android:layout_below="@id/rating"
+    	android:layout_marginTop="15dip"
+    	android:layout_marginBottom="10dip">
+    	
+    	<fragment
+			android:id="@+id/mapView"
+			android:name="com.google.android.gms.maps.SupportMapFragment"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>

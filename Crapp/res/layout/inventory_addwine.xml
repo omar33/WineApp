@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+   >
+    
+<TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Wine Name"
+
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtName"
+  android:autoText="false"
+
+  />
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Wine Price ($)"
+ 
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtPrice"
+  android:inputType="numberDecimal"
+  android:digits="0123456789."
+  android:singleLine="true"
+  android:maxLength="7"
+  />
+  
+  
+  
+  
+    <TextView
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:text="Quantity"
+
+  />
+  <EditText
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/txtQuantity"
+  android:inputType="number"
+  android:digits="0123456789"
+  android:singleLine="true"
+ android:maxLength="7"
+  />
+  
+  
+  
+  
+  <TextView
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:text="Wine Type"
+  />
+  
+  <Spinner
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:entries="@array/wineType_arrays"
+  android:id="@+id/spinType"
+  />
+  
+  <Button
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:id="@+id/btnAdd"
+  android:text="Add Wine"
+  android:onClick="btnAddEmp_Click"
+  />
+  <TextView
+      
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Number of Wines: "
+  android:id="@+id/txtWines"
+  />
+  		
+</LinearLayout>

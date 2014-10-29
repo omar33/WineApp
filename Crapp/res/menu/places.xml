@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item 
+   		android:id="@+id/radius"
+    	android:icon="@android:drawable/ic_menu_myplaces"
+    	android:title="@string/radius"
+    	android:showAsAction="ifRoom"/>
+	<item
+		android:id="@+id/map_mode"
+		android:icon="@android:drawable/ic_menu_mapmode"
+		android:title="@string/map_mode"
+		android:showAsAction="ifRoom"/>
+	<item
+		android:id="@+id/action_refresh"
+		android:icon="@drawable/ic_menu_refresh"
+		android:title="@string/action_refresh"
+		android:showAsAction="ifRoom"/>
+</menu>
